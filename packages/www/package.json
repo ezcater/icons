@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "deploy": "next build && next export && touch out/.nojekyll && gh-pages -d out -r ssh://git@github.com/ezcater/icons.git -t"
   },
   "dependencies": {
     "@ezcater/icons": "file:../icons",
@@ -14,5 +15,8 @@
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "tailwindcss": "^1.2.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
   }
 }
