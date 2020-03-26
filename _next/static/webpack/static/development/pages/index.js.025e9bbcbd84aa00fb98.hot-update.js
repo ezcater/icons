@@ -1,5 +1,20 @@
 webpackHotUpdate("static/development/pages/index.js",{
 
+/***/ "./node_modules/next/dist/next-server/lib/dynamic.js":
+false,
+
+/***/ "./node_modules/next/dist/next-server/lib/loadable-context.js":
+false,
+
+/***/ "./node_modules/next/dist/next-server/lib/loadable.js":
+false,
+
+/***/ "./node_modules/use-subscription/cjs/use-subscription.development.js":
+false,
+
+/***/ "./node_modules/use-subscription/index.js":
+false,
+
 /***/ "./pages/index.js":
 /*!************************!*\
   !*** ./pages/index.js ***!
@@ -88,6 +103,7 @@ var Home = function Home() {
       columnNumber: 9
     }
   })), __jsx("main", {
+    className: "w-full",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -95,7 +111,7 @@ var Home = function Home() {
       columnNumber: 7
     }
   }, __jsx("div", {
-    className: "max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8",
+    className: "max-w-screen-lg mx-auto px-4 sm:px-6 lg:px-8",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -103,7 +119,7 @@ var Home = function Home() {
       columnNumber: 9
     }
   }, __jsx("div", {
-    className: "flexlg:text-center",
+    className: "lg:text-center",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -186,4 +202,4 @@ var Home = function Home() {
 /***/ })
 
 })
-//# sourceMappingURL=index.js.a7a79ce6ee617c6b6ed1.hot-update.js.map
+//# sourceMappingURL=index.js.025e9bbcbd84aa00fb98.hot-update.js.map

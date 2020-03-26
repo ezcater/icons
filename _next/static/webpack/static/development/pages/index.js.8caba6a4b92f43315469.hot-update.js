@@ -1,5 +1,8 @@
 webpackHotUpdate("static/development/pages/index.js",{
 
+/***/ "./components/Search.js":
+false,
+
 /***/ "./pages/index.js":
 /*!************************!*\
   !*** ./pages/index.js ***!
@@ -14,10 +17,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/head */ "./node_modules/next/dist/next-server/lib/head.js");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _components_Search__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Search */ "./components/Search.js");
-/* harmony import */ var _components_IconGrid__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/IconGrid */ "./components/IconGrid.js");
-/* harmony import */ var _ezcater_icons_dist__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @ezcater/icons/dist */ "../icons/dist/index.js");
-/* harmony import */ var _ezcater_icons_dist__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_ezcater_icons_dist__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var next_dynamic__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/dynamic */ "./node_modules/next/dist/next-server/lib/dynamic.js");
+/* harmony import */ var next_dynamic__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_dynamic__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _ezcater_icons_dist__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @ezcater/icons/dist */ "../icons/dist/index.js");
+/* harmony import */ var _ezcater_icons_dist__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_ezcater_icons_dist__WEBPACK_IMPORTED_MODULE_4__);
 
 
 var _this = undefined,
@@ -28,9 +31,28 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 
-
-var allIcons = Object.keys(_ezcater_icons_dist__WEBPACK_IMPORTED_MODULE_5__).map(function (key) {
-  return _ezcater_icons_dist__WEBPACK_IMPORTED_MODULE_5__[key];
+var Search = next_dynamic__WEBPACK_IMPORTED_MODULE_3___default()(function () {
+  return __webpack_require__.e(/*! import() */ 2).then(__webpack_require__.bind(null, /*! ../components/Search */ "./components/Search.js"));
+}, {
+  loadableGenerated: {
+    webpack: function webpack() {
+      return [/*require.resolve*/(/*! ../components/Search */ "./components/Search.js")];
+    },
+    modules: ['../components/Search']
+  }
+});
+var IconGrid = next_dynamic__WEBPACK_IMPORTED_MODULE_3___default()(function () {
+  return __webpack_require__.e(/*! import() */ 1).then(__webpack_require__.bind(null, /*! ../components/IconGrid */ "./components/IconGrid.js"));
+}, {
+  loadableGenerated: {
+    webpack: function webpack() {
+      return [/*require.resolve*/(/*! ../components/IconGrid */ "./components/IconGrid.js")];
+    },
+    modules: ['../components/IconGrid']
+  }
+});
+var allIcons = Object.keys(_ezcater_icons_dist__WEBPACK_IMPORTED_MODULE_4__).map(function (key) {
+  return _ezcater_icons_dist__WEBPACK_IMPORTED_MODULE_4__[key];
 });
 
 var Home = function Home() {
@@ -61,21 +83,21 @@ var Home = function Home() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26,
+      lineNumber: 28,
       columnNumber: 5
     }
   }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27,
+      lineNumber: 29,
       columnNumber: 7
     }
   }, __jsx("title", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28,
+      lineNumber: 30,
       columnNumber: 9
     }
   }, "@ezcater/icons"), __jsx("link", {
@@ -84,22 +106,23 @@ var Home = function Home() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29,
+      lineNumber: 31,
       columnNumber: 9
     }
   })), __jsx("main", {
+    className: "w-full",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32,
+      lineNumber: 34,
       columnNumber: 7
     }
   }, __jsx("div", {
-    className: "w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8",
+    className: "max-w-screen-lg mx-auto px-4 sm:px-6 lg:px-8",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33,
+      lineNumber: 35,
       columnNumber: 9
     }
   }, __jsx("div", {
@@ -107,7 +130,7 @@ var Home = function Home() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34,
+      lineNumber: 36,
       columnNumber: 11
     }
   }, __jsx("p", {
@@ -115,7 +138,7 @@ var Home = function Home() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35,
+      lineNumber: 37,
       columnNumber: 13
     }
   }, "@ezcater/icons"), __jsx("h3", {
@@ -123,7 +146,7 @@ var Home = function Home() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38,
+      lineNumber: 40,
       columnNumber: 13
     }
   }, "Icons for every occasion"), __jsx("p", {
@@ -131,7 +154,7 @@ var Home = function Home() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41,
+      lineNumber: 43,
       columnNumber: 13
     }
   }, "Our talented marketing folks have created hundreds of branded icons."), __jsx("p", {
@@ -139,7 +162,7 @@ var Home = function Home() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44,
+      lineNumber: 46,
       columnNumber: 13
     }
   }, "For each SVG icon, import the respective React component using the", ' ', __jsx("a", {
@@ -148,10 +171,10 @@ var Home = function Home() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46,
+      lineNumber: 48,
       columnNumber: 15
     }
-  }, "@ezcater/icons"), ' ', "package, or click any icon below to copy the SVG source.")), __jsx(_components_Search__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }, "@ezcater/icons"), ' ', "package, or click any icon below to copy the SVG source.")), __jsx(Search, {
     value: query,
     onChange: function onChange(e) {
       return setQuery(e.target.value);
@@ -159,7 +182,7 @@ var Home = function Home() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53,
+      lineNumber: 55,
       columnNumber: 11
     }
   }), __jsx("div", {
@@ -167,15 +190,15 @@ var Home = function Home() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55,
+      lineNumber: 57,
       columnNumber: 11
     }
-  }, __jsx(_components_IconGrid__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }, __jsx(IconGrid, {
     icons: icons,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56,
+      lineNumber: 58,
       columnNumber: 13
     }
   })))));
@@ -186,4 +209,4 @@ var Home = function Home() {
 /***/ })
 
 })
-//# sourceMappingURL=index.js.301c3f3802f5abbeb87c.hot-update.js.map
+//# sourceMappingURL=index.js.8caba6a4b92f43315469.hot-update.js.map
