@@ -6,17 +6,17 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "deploy": "next build && next export && touch out/.nojekyll && gh-pages -d out -r ssh://git@github.com/ezcater/icons.git -t"
+    "deploy": "next build && touch out/.nojekyll && gh-pages -d out -r ssh://git@github.com/ezcater/icons.git -t"
   },
   "dependencies": {
     "@ezcater/icons": "file:../icons",
-    "next": "9.3.1",
-    "postcss-preset-env": "^6.7.0",
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
-    "tailwindcss": "^1.2.0"
+    "next": "14.0.0",
+    "postcss-preset-env": "^9.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwindcss": "^3.3.5"
   },
   "devDependencies": {
-    "gh-pages": "^2.2.0"
+    "gh-pages": "^6.0.0"
   }
 }

@@ -1,0 +1,1 @@
+{"compilerOptions":{"allowSyntheticDefaultImports":true,"esModuleInterop":true,"importHelpers":true,"jsx":"react","lib":["dom","es6"],"moduleResolution":"node","skipLibCheck":true,"strict":true,"target":"es5","types":["node"],"outDir":"./built","rootDir":"./built","declaration":true,"module":"es2015"},"exclude":["generate"]}
