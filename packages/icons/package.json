@@ -3,35 +3,45 @@
   "version": "1.0.0",
   "description": "ezCater icons available as React components",
   "main": "./dist/index.js",
-  "module": "./dist/index.esm.js",
+  "module": "./dist/esm/index.js",
   "types": "./dist/index.d.ts",
   "sideEffects": false,
+  "files": [
+    "dist"
+  ],
   "author": "Craig Cavalier",
   "license": "MIT",
   "devDependencies": {
-    "@svgr/core": "^8.1.0",
+    "@svgr/cli": "^8.1.0",
+    "@svgr/plugin-jsx": "^8.1.0",
+    "@svgr/plugin-prettier": "^8.1.0",
+    "@svgr/plugin-svgo": "^8.1.0",
     "@types/node": "^20.8.9",
     "@types/react": "^18.2.33",
-    "execa": "^8.0.1",
-    "fast-case": "^1.7.0",
-    "fast-glob": "^3.3.1",
-    "fs-extra": "^11.1.1",
-    "h2x-core": "^1.1.1",
-    "h2x-plugin-jsx": "^1.2.0",
-    "number-to-words": "^1.2.4",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^3.0.3",
     "react": "^18.2.0",
-    "svgo": "^3.0.2",
-    "to-words": "^3.6.1",
-    "ts-node": "^10.9.1",
+    "tsup": "^7.2.0",
     "typescript": "^5.2.2"
   },
+  "dependencies": {},
   "peerDependencies": {
-    "react": "*"
-  },
-  "dependencies": {
-    "tslib": "^2.6.2"
+    "react": ">=16"
   },
   "scripts": {
-    "build": "node ./build/index.mjs"
+    "build": "run-s build:icons build:library",
+    "build:icons": "svgr -d compiled-icons src",
+    "build:library": "tsup"
+  },
+  "tsup": {
+    "entry": ["compiled-icons"],
+    "sourcemap": "inline",
+    "clean": true,
+    "dts": true,
+    "format": [
+      "esm",
+      "cjs"
+    ],
+    "legacyOutput": true
   }
 }
