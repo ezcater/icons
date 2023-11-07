@@ -1,9 +1,9 @@
-const repoNameURIPrefix = process.env.NODE_ENV === "production" ? "/icons" : "";
-
+/** @type {import('next').NextConfig} */
 module.exports = {
-  assetPrefix: repoNameURIPrefix,
-  env: {
-    linkPrefix: repoNameURIPrefix,
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/icons' : undefined,
+  reactStrictMode: true,
+  output: 'export',
+  eslint: {
+    ignoreDuringBuilds: true,
   },
-  output: "export",
 };

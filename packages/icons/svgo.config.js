@@ -2,7 +2,7 @@
 module.exports = {
   plugins: [
     {
-      name: "preset-default",
+      name: 'preset-default',
       params: {
         overrides: {
           removeViewBox: false,
@@ -12,20 +12,20 @@ module.exports = {
         },
       },
     },
-    "removeDimensions",
-    "removeScriptElement",
-    "removeXMLNS",
-    "removeStyleElement",
+    'removeDimensions',
+    'removeScriptElement',
+    'removeXMLNS',
+    'removeStyleElement',
     {
-      name: "removeAttrs",
+      name: 'removeAttrs',
       params: {
-        attrs: "*:(stroke|fill):((?!^none$)(?!^currentColor$).)*",
+        attrs: '*:(stroke|fill):((?!^none$)(?!^currentColor$).)*',
       },
     },
     {
-      name: "sortAttrs",
+      name: 'sortAttrs',
       params: {
-        xmlnsOrder: "alphabetical",
+        xmlnsOrder: 'alphabetical',
       },
     },
   ],

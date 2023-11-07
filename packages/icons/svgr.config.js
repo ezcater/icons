@@ -1,10 +1,10 @@
 /** @type {import('@svgr/core').Config} */
 module.exports = {
-  plugins: ["@svgr/plugin-svgo", "@svgr/plugin-jsx", "@svgr/plugin-prettier"],
-  ext: "tsx",
+  plugins: ['@svgr/plugin-svgo', '@svgr/plugin-jsx', '@svgr/plugin-prettier'],
+  ext: 'tsx',
   typescript: true,
-  expandProps: "end",
+  expandProps: 'end',
   ref: false,
   memo: false,
-  jsxRuntime: "classic",
+  jsxRuntime: 'classic',
 };

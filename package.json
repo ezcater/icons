@@ -1,0 +1,15 @@
+{
+  "private": true,
+  "packageManager": "yarn@4.0.1",
+  "workspaces": [
+    "packages/www",
+    "packages/icons"
+  ],
+  "devDependencies": {
+    "turbo": "^1.10.16"
+  },
+  "scripts": {
+    "build": "turbo run build",
+    "lint": "turbo run lint"
+  }
+}
