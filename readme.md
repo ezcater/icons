@@ -50,7 +50,7 @@ The preview site is the [`react-icons`](https://ezcater.github.io/icons) website
 
 ```bash
 cd packages/www
-npm run dev
+yarn dev
 ```
 
 ## Why React SVG components instead of fonts?

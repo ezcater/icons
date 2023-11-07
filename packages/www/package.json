@@ -6,17 +6,36 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "deploy": "next build && next export && touch out/.nojekyll && gh-pages -d out -r ssh://git@github.com/ezcater/icons.git -t"
+    "deploy": "next build && touch out/.nojekyll && gh-pages -d out -r ssh://git@github.com/ezcater/icons.git -t",
+    "lint": "run-p -c --aggregate-output -n \"lint:*\"",
+    "lint:js": "eslint --ext .js,.jsx,.ts,.tsx .",
+    "lint:format": "prettier --check .",
+    "lint:typescript": "tsc --noEmit"
   },
   "dependencies": {
-    "@ezcater/icons": "file:../icons",
-    "next": "9.3.1",
-    "postcss-preset-env": "^6.7.0",
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
-    "tailwindcss": "^1.2.0"
+    "next": "14.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "gh-pages": "^2.2.0"
+    "@ezcater/icons": "^1.0.0",
+    "@ezcater/prettier-config": "^1.0.1",
+    "@next/eslint-plugin-next": "14.0.1",
+    "@types/node": "^20.8.10",
+    "@types/react": "^18.2.36",
+    "@typescript-eslint/eslint-plugin": "^6.10.0",
+    "@typescript-eslint/parser": "^6.10.0",
+    "autoprefixer": "^10.4.13",
+    "eslint": "^8.39.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "gh-pages": "^6.0.0",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.31",
+    "prettier": "^2.8.8",
+    "prettier-plugin-tailwindcss": "^0.2.5",
+    "tailwindcss": "^3.3.5",
+    "typescript": "^5.2.2"
   }
 }

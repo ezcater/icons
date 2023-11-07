@@ -1,7 +1,8 @@
+import React from 'react';
 import Head from 'next/head';
 import Search from '../components/Search';
 import IconGrid from '../components/IconGrid';
-import * as iconsPackage from '@ezcater/icons/dist';
+import * as iconsPackage from '@ezcater/icons';
 
 const allIcons = Object.keys(iconsPackage).map(key => iconsPackage[key]);
 
@@ -13,7 +14,7 @@ const Home = () => {
     const id = setTimeout(() => {
       const queryLower = query.toLowerCase();
       const subset = allIcons.filter(each =>
-        each.originalFilename.toLowerCase().includes(queryLower)
+        each.name.toLowerCase().replace(/^svg/i, '').includes(queryLower)
       );
       setIcons(subset);
     }, 25);
@@ -23,19 +24,19 @@ const Home = () => {
   }, [query]);
 
   return (
-    <div className="py-24 flex flex-row justify-center min-h-screen bg-kale-green antialiased">
+    <div className="flex min-h-screen flex-row justify-center bg-kale-green py-24 antialiased">
       <Head>
         <title>@ezcater/icons</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className="w-full">
-        <div className="max-w-screen-lg mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-screen-lg px-4 sm:px-6 lg:px-8">
           <div className="lg:text-center">
-            <p className="text-base leading-6 text-ez-green font-semibold tracking-wide">
+            <p className="text-base font-semibold leading-6 tracking-wide text-ez-green">
               @ezcater/icons
             </p>
-            <h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl sm:leading-10">
+            <h3 className="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-white sm:text-4xl sm:leading-10">
               Icons for every occasion
             </h3>
             <p className="mt-4 max-w-2xl text-xl leading-7 text-gray-400 lg:mx-auto">

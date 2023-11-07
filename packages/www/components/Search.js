@@ -1,12 +1,12 @@
-export default ({ value, onChange }) => {
+export default ({value, onChange}) => {
   return (
     <div className="sticky top-0 z-40">
-      <div className="-mx-2 -mb-8 px-2 bg-kale-green" style={{ height: 'calc(14 * 0.25rem)' }} />
+      <div className="-mx-2 -mb-8 bg-kale-green px-2" style={{height: 'calc(14 * 0.25rem)'}} />
 
       <div className="relative">
         <span className="relative inline-block w-full">
           <input
-            className="focus:outline-0 border border-transparent focus:border-gray-300 placeholder-gray-600 rounded-lg bg-white py-2 pr-4 pl-10 block w-full appearance-none leading-normal outline-none shadow-md focus:shadow-outline"
+            className="focus:shadow-outline block w-full appearance-none rounded-lg border border-transparent bg-white py-2 pl-10 pr-4 leading-normal placeholder-gray-600 shadow-md outline-none focus:border-gray-300 focus:outline-0"
             type="text"
             placeholder="Search"
             autoComplete="off"
@@ -15,9 +15,9 @@ export default ({ value, onChange }) => {
             onChange={onChange}
           />
         </span>
-        <div className="pointer-events-none absolute inset-y-0 left-0 pl-4 flex items-center">
+        <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-4">
           <svg
-            className="fill-current pointer-events-none text-gray-600 w-4 h-4"
+            className="pointer-events-none h-4 w-4 fill-current text-gray-600"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 20 20"
           >
